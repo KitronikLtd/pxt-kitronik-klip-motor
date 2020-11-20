@@ -347,7 +347,9 @@ namespace kitronik_klip_motor {
         //% weight=96 blockGap=8
         //% parts="neopixel"
         show() {
-            ws2812b.sendBuffer(this.buf, this.pin);
+            //ws2812b.sendBuffer(this.buf, this.pin);
+            // Use the pxt-microbit core version which now respects brightness (10/2020)
+            light.sendWS2812BufferWithBrightness(this.buf, this.pin, this.brightness);
         }
 
         /**

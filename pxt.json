@@ -4,8 +4,7 @@
     "description": "Blocks for driving the Kitronik Klip Motor Board",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "ws2812b": "github:Microsoft/pxt-ws2812b#v0.0.4"
+        "core": "*"
     },
     "files": [
         "README.md",
